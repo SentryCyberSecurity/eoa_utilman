@@ -1,0 +1,22 @@
+msf post(eoa_cmd) > use post/windows/manage/eoa_utilman 
+msf post(eoa_utilman) > show options 
+
+Module options (post/windows/manage/eoa_utilman):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SESSION                   yes       The session to run this module on.
+
+msf post(eoa_utilman) > set SESSION 1
+SESSION => 1
+msf post(eoa_utilman) > run
+
+[*] Please make sure you have migrated to a user process.
+[*] System info : Windows 7 (Build 7601, Service Pack 1).
+[*] Logged on Users # :  1
+[*] Executing script as user : [ WIndows-PC\drin ] on process : [ 3584 ]
+[*] Restoring Utilman to default usage ...
+
+[+] Restoring completed successfully.
+
+[*] Post module execution completed
